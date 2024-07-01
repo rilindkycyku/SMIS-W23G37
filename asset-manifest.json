@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/SMIS-W23G37/static/css/main.493ddbe5.css",
+    "main.js": "/SMIS-W23G37/static/js/main.74b4cf64.js",
+    "static/js/213.78b6e13b.chunk.js": "/SMIS-W23G37/static/js/213.78b6e13b.chunk.js",
+    "static/js/455.df41f0c9.chunk.js": "/SMIS-W23G37/static/js/455.df41f0c9.chunk.js",
+    "index.html": "/SMIS-W23G37/index.html",
+    "main.493ddbe5.css.map": "/SMIS-W23G37/static/css/main.493ddbe5.css.map",
+    "main.74b4cf64.js.map": "/SMIS-W23G37/static/js/main.74b4cf64.js.map",
+    "213.78b6e13b.chunk.js.map": "/SMIS-W23G37/static/js/213.78b6e13b.chunk.js.map",
+    "455.df41f0c9.chunk.js.map": "/SMIS-W23G37/static/js/455.df41f0c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.493ddbe5.css",
+    "static/js/main.74b4cf64.js"
+  ]
+}
