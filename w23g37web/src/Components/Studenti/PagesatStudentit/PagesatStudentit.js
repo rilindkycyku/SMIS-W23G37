@@ -24,6 +24,7 @@ function PagesatStudentit(props) {
   const [notat, setNotat] = useState([]);
 
   const [kaAkses, setKaAkses] = useState(true);
+  const [teDhenatUserit, setTeDhenatUserit] = useState(null);
 
   const getID = localStorage.getItem("id");
 
@@ -42,11 +43,11 @@ function PagesatStudentit(props) {
       const vendosDetajetVertetimitStudentor = async () => {
         try {
           const notat = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqPagesatStudentit?studentiID=${props.id}`,
+            `http://localhost:7253/api/Studentet/ShfaqPagesatStudentit?studentiID=${props.id}`,
             authentikimi
           );
           const pagesat = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${props.id}`,
+            `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${props.id}`,
             authentikimi
           );
           setNotat(notat.data);
@@ -86,8 +87,12 @@ function PagesatStudentit(props) {
             `https://localhost:7285/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
             authentikimi
           );
-          setTeDhenat(teDhenatUser.data);
-          if (!teDhenatUser.data.rolet.includes("Admin", "Menaxher")) {
+          setTeDhenatUserit(teDhenatUser.data);
+          if (
+            !teDhenatUser.data.rolet.includes("Admin") &&
+            !teDhenatUser.data.rolet.includes("Menaxher") &&
+            !teDhenatUser.data.rolet.includes("Administrat")
+          ) {
             setKaAkses(false);
           }
           console.log(teDhenatUser.data);
@@ -103,8 +108,8 @@ function PagesatStudentit(props) {
   }, [getID]);
 
   useEffect(() => {
-    console.log(teDhenat);
-    if (teDhenat) {
+    console.log(teDhenatUserit);
+    if (teDhenatUserit) {
       if (!kaAkses) {
         navigate("/dashboard");
       } else {
@@ -113,7 +118,7 @@ function PagesatStudentit(props) {
         }
       }
     }
-  }, [vendosFature]);
+  }, [vendosFature, teDhenatUserit]);
 
   function FaturaPerRuajtje() {
     const mePakSe25Ref = document.querySelector(".mePakSe25");

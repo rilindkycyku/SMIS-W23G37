@@ -24,7 +24,7 @@ function HeaderPagesatStudentit(props) {
     const vendosFature = async () => {
       try {
         const notat = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${props.id}`,
+          `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${props.id}`,
           authentikimi
         );
         setTeDhenat(notat.data);

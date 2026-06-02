@@ -37,7 +37,7 @@ const Dashboard = () => {
       const vendosTeDhenat = async () => {
         try {
           const rolet = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+            `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
             authentikimi
           );
 
@@ -45,7 +45,7 @@ const Dashboard = () => {
             setEshteStudent(true);
 
             const pagesat = await axios.get(
-              `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
+              `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
               authentikimi
             );
 
@@ -55,7 +55,7 @@ const Dashboard = () => {
           }
 
           const perdoruesi = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/ShfaqTeDhenatNgaID?id=${getID}`,
+            `http://localhost:7253/api/Perdoruesi/ShfaqTeDhenatNgaID?id=${getID}`,
             authentikimi
           );
 

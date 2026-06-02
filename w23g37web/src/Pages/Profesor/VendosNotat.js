@@ -54,15 +54,18 @@ const VendosNotat = () => {
       try {
         setLoading(true);
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
-        if (!rolet.data.rolet.includes("Profesor")) {
+        if (
+          !rolet.data.rolet.includes("Profesor") &&
+          !rolet.data.rolet.includes("Asistent")
+        ) {
           navigate("/NukKeniAkses");
         }
 
         const lendet = await axios.get(
-          `https://localhost:7251/api/Profesor/ShfaqLendetProfesorit?profesoriID=${getID}`,
+          `http://localhost:7253/api/Profesor/ShfaqLendetProfesorit?profesoriID=${getID}`,
           authentikimi
         );
 
@@ -83,7 +86,7 @@ const VendosNotat = () => {
         setLoading(true);
 
         const departamentetPerLenden = await axios.get(
-          `https://localhost:7251/api/Profesor/ShfaqDepartamentinPerLendetProfesorit?profesoriID=${getID}&lendaID=${id}`,
+          `http://localhost:7253/api/Profesor/ShfaqDepartamentinPerLendetProfesorit?profesoriID=${getID}&lendaID=${id}`,
           authentikimi
         );
 
@@ -104,7 +107,7 @@ const VendosNotat = () => {
         setLoading(true);
 
         const studentet = await axios.get(
-          `https://localhost:7251/api/Profesor/ShfaqStudentetQeKaneParaqiturProvimin?profesoriID=${getID}&lendaID=${id}&departamentiID=${departamentiID}`,
+          `http://localhost:7253/api/Profesor/ShfaqStudentetQeKaneParaqiturProvimin?profesoriID=${getID}&lendaID=${id}&departamentiID=${departamentiID}`,
           authentikimi
         );
 
@@ -151,7 +154,7 @@ const VendosNotat = () => {
     const nota = selectedLdpIds[paraqitjaProvimitID];
 
     const vendosNoten = await axios.post(
-      `https://localhost:7251/api/Profesor/VendosNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}&nota=${
+      `http://localhost:7253/api/Profesor/VendosNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}&nota=${
         nota.length >= 3 ? nota.split(" - ")[0].trim() : nota
       }&statusi=${nota.length >= 3 ? nota.split(" - ")[1].trim() : "Rregullt"}`,
       authentikimi
@@ -172,7 +175,7 @@ const VendosNotat = () => {
     const nota = selectedLdpIds[paraqitjaProvimitID];
 
     const vendosNoten = await axios.put(
-      `https://localhost:7251/api/Profesor/PerditesoNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}&nota=${
+      `http://localhost:7253/api/Profesor/PerditesoNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}&nota=${
         nota.length >= 3 ? nota.split(" - ")[0].trim() : nota
       }&statusi=${nota.length >= 3 ? nota.split(" - ")[1].trim() : "Rregullt"}`,
       authentikimi
@@ -193,7 +196,7 @@ const VendosNotat = () => {
     const nota = selectedLdpIds[paraqitjaProvimitID];
 
     const refuzoNoten = await axios.put(
-      `https://localhost:7251/api/Profesor/RefuzoNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}`,
+      `http://localhost:7253/api/Profesor/RefuzoNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}`,
       authentikimi
     );
 

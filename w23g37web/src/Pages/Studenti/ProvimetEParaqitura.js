@@ -48,14 +48,14 @@ const ProvimetEParaqitura = () => {
       try {
         setLoading(true);
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Student")) {
           navigate("/NukKeniAkses");
         }
         const provimet = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqProvimetEParaqitura?studentiID=${getID}`,
+          `http://localhost:7253/api/Studentet/ShfaqProvimetEParaqitura?studentiID=${getID}`,
           authentikimi
         );
         setProvimet(provimet.data.provimet);
@@ -70,7 +70,7 @@ const ProvimetEParaqitura = () => {
 
         if (rolet.data.rolet.includes("Student")) {
           const pagesat = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
+            `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
             authentikimi
           );
 
@@ -107,7 +107,7 @@ const ProvimetEParaqitura = () => {
 
   const anuloParaqitjenProvimit = async (paraqitjaProvimitID) => {
     const anuloParaqitjen = await axios.delete(
-      `https://localhost:7251/api/Studentet/AnuloParaqitjenProvimit?paraqitjaProvimitID=${paraqitjaProvimitID}`,
+      `http://localhost:7253/api/Studentet/AnuloParaqitjenProvimit?paraqitjaProvimitID=${paraqitjaProvimitID}`,
       authentikimi
     );
 
@@ -126,7 +126,7 @@ const ProvimetEParaqitura = () => {
 
   const refuzoNoten = async (paraqitjaProvimitID) => {
     const refuzoNoten = await axios.put(
-      `https://localhost:7251/api/Profesor/RefuzoNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}`,
+      `http://localhost:7253/api/Profesor/RefuzoNotenStudentit?paraqitjaProvimitID=${paraqitjaProvimitID}`,
       authentikimi
     );
 

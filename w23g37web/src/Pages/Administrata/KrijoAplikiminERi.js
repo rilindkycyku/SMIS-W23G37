@@ -64,7 +64,7 @@ const KrijoAplikiminERi = () => {
     const vendosDepartamentet = async () => {
       try {
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Administrat")) {
@@ -72,11 +72,11 @@ const KrijoAplikiminERi = () => {
         }
 
         const departamentet = await axios.get(
-          `https://localhost:7251/api/Administrata/shfaqDepartamentet`,
+          `http://localhost:7253/api/Administrata/shfaqDepartamentet`,
           authentikimi
         );
         const vitiAkademikRegjistrim = await axios.get(
-          `https://localhost:7251/api/Administrata/GjeneroVitinAkademik`,
+          `http://localhost:7253/api/Administrata/GjeneroVitinAkademik`,
           authentikimi
         );
         setDepartamentet(departamentet.data);
@@ -89,7 +89,7 @@ const KrijoAplikiminERi = () => {
     const vendosZbritjet = async () => {
       try {
         const zbritjet = await axios.get(
-          `https://localhost:7251/api/Administrata/ShfaqZbritjet`,
+          `http://localhost:7253/api/Administrata/ShfaqZbritjet`,
           authentikimi
         );
 
@@ -107,7 +107,7 @@ const KrijoAplikiminERi = () => {
     const vendosNiveletEStudimit = async () => {
       try {
         const niveletEStudimit = await axios.get(
-          `https://localhost:7251/api/Administrata/shfaqNiveletStudimitGjatAplikimit?departamentiID=${departamentiID}`,
+          `http://localhost:7253/api/Administrata/shfaqNiveletStudimitGjatAplikimit?departamentiID=${departamentiID}`,
           authentikimi
         );
         console.log(niveletEStudimit.data);
@@ -186,7 +186,7 @@ const KrijoAplikiminERi = () => {
       const VetemShkronjaREGEX = /^[a-zA-ZçëÇË -]+$/;
 
       var kodiFinanciar = await axios.get(
-        `https://localhost:7251/api/Administrata/gjeneroKodinFinanciar?departamentiID=${departamentiID}&niveliStudimitID=${niveliStudimitID}`, authentikimi
+        `http://localhost:7253/api/Administrata/gjeneroKodinFinanciar?departamentiID=${departamentiID}&niveliStudimitID=${niveliStudimitID}`, authentikimi
       );
 
       if (shteti == "Kosovë" && !NrPeronsalRKSREGEX.test(nrPersonal)) {
@@ -262,7 +262,7 @@ const KrijoAplikiminERi = () => {
       } else {
         axios
           .post(
-            "https://localhost:7251/api/Administrata/KrijoniAplikimERi",
+            "http://localhost:7253/api/Administrata/KrijoniAplikimERi",
             {
               aplikimetEReja: {
                 Emri: emri,

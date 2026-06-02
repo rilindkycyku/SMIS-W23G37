@@ -27,7 +27,7 @@ function DetajetAplikimit(props) {
       const vendosAplikimin = async () => {
         try {
           const teDhenatAplikimit = await axios.get(
-            `https://localhost:7251/api/Administrata/ShfaqAplikiminNgaID?id=${props.id}`,
+            `http://localhost:7253/api/Administrata/ShfaqAplikiminNgaID?id=${props.id}`,
             authentikimi
           );
           setTeDhenatAplikimit(teDhenatAplikimit.data);
@@ -43,7 +43,7 @@ function DetajetAplikimit(props) {
 
       const vendosLlogariteBankare = async () => {
         const bankat = await axios.get(
-          "https://localhost:7251/api/Administrata/ShfaqLlogariteBankare",
+          "http://localhost:7253/api/Administrata/ShfaqLlogariteBankare",
           authentikimi
         );
 

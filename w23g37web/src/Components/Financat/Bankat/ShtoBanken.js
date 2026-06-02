@@ -68,7 +68,7 @@ const ShtoBanken = (props) => {
     try {
       await axios
         .post(
-          "https://localhost:7251/api/Financat/ShtoniBanken",
+          "http://localhost:7253/api/Financat/ShtoniBanken",
           {
             banka: {
               emriBankes: emriBankes,

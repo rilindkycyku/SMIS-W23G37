@@ -32,7 +32,7 @@ function PagesatEPaPerfunduara(props) {
       const vendosAplikimin = async () => {
         try {
           const teDhenatAplikimit = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
+            `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
             authentikimi
           );
           setTeDhenatAplikimit(teDhenatAplikimit.data);
@@ -48,14 +48,14 @@ function PagesatEPaPerfunduara(props) {
 
       const vendosLlogariteBankare = async () => {
         const bankat = await axios.get(
-          "https://localhost:7251/api/Administrata/ShfaqLlogariteBankare",
+          "http://localhost:7253/api/Administrata/ShfaqLlogariteBankare",
           authentikimi
         );
 
         setLlogariteBankare(bankat.data);
 
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Student")) {

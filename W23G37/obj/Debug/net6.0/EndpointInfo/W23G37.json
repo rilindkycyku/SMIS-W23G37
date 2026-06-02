@@ -1,0 +1,2680 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "JWTToken_Auth_API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Administrata/shfaqDepartamentet": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/shfaqNiveletStudimitGjatAplikimit": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "parameters": [
+          {
+            "name": "departamentiID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/gjeneroKodinFinanciar": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "parameters": [
+          {
+            "name": "departamentiID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "niveliStudimitID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/GjeneroVitinAkademik": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/KrijoniAplikimERi": {
+      "post": {
+        "tags": [
+          "Administrata"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdministrataModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdministrataModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdministrataModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/ShfaqZbritjet": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/ShfaqAplikimetEReja": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/ShfaqAplikiminNgaID": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/ShfaqLlogariteBankare": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/ShfaqStudentet": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/PerditesoniTeDhenatStudentit": {
+      "put": {
+        "tags": [
+          "Administrata"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdministrataModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdministrataModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdministrataModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Administrata/ShfaqDetajetVertetimiStudentore": {
+      "get": {
+        "tags": [
+          "Administrata"
+        ],
+        "parameters": [
+          {
+            "name": "userID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/shfaqRolin": {
+      "get": {
+        "tags": [
+          "Authenticate"
+        ],
+        "parameters": [
+          {
+            "name": "emriRolit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/shfaqRolet": {
+      "get": {
+        "tags": [
+          "Authenticate"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/ShfaqRoletPerKrijim": {
+      "get": {
+        "tags": [
+          "Authenticate"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/kontrolloAksesin": {
+      "get": {
+        "tags": [
+          "Authenticate"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/login": {
+      "post": {
+        "tags": [
+          "Authenticate"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogInModelAPI"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogInModelAPI"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LogInModelAPI"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/shtoRolinPerdoruesit": {
+      "post": {
+        "tags": [
+          "Authenticate"
+        ],
+        "parameters": [
+          {
+            "name": "userID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "roli",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/shtoRolin": {
+      "post": {
+        "tags": [
+          "Authenticate"
+        ],
+        "parameters": [
+          {
+            "name": "roli",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/FshijRolinUserit": {
+      "delete": {
+        "tags": [
+          "Authenticate"
+        ],
+        "parameters": [
+          {
+            "name": "userID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "roli",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Authenticate/fshijRolin": {
+      "delete": {
+        "tags": [
+          "Authenticate"
+        ],
+        "parameters": [
+          {
+            "name": "emriRolit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqBankat": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqBankenNgaID": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "bankaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShtoniBanken": {
+      "post": {
+        "tags": [
+          "Financat"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/FshiniBanken": {
+      "delete": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "bankaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/PerditesoniBanken": {
+      "put": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "bankaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqniPagesat": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqniPersonatPerPagese": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShtoniPagesen": {
+      "post": {
+        "tags": [
+          "Financat"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/FshiniPagesen": {
+      "delete": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "pagesaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqniDepartamentet": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqniTarifatPerDepartamentin": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "DepartamentiID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqniDetajetTarifes": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "TarifaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/PerditesoniTarifenDepartamentit": {
+      "put": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "tarifaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancatModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/ShfaqStudentet": {
+      "get": {
+        "tags": [
+          "Financat"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Financat/PerditesoniTarifenStudentit": {
+      "put": {
+        "tags": [
+          "Financat"
+        ],
+        "parameters": [
+          {
+            "name": "StudentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/shfaqPerdoruesit": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/editoRoletPerdoruesit": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "parameters": [
+          {
+            "name": "AspNetUserId",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "llojiEditmit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/shfaqLlogaritERejaTeKrijuara": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/shfaqSipasID": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "parameters": [
+          {
+            "name": "idUserAspNet",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/KontrolloEmail": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/KontrolloFjalekalimin": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "parameters": [
+          {
+            "name": "AspNetID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fjalekalimi",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/NdryshoFjalekalimin": {
+      "post": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "parameters": [
+          {
+            "name": "AspNetID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fjalekalimiAktual",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fjalekalimiIRi",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/ShfaqTeDhenatNgaID": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Perdoruesi/ShfaqTeDhenatPerEditim": {
+      "get": {
+        "tags": [
+          "Perdoruesi"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Profesor/ShfaqLendetProfesorit": {
+      "get": {
+        "tags": [
+          "Profesor"
+        ],
+        "parameters": [
+          {
+            "name": "profesoriID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Profesor/ShfaqDepartamentinPerLendetProfesorit": {
+      "get": {
+        "tags": [
+          "Profesor"
+        ],
+        "parameters": [
+          {
+            "name": "profesoriID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lendaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Profesor/ShfaqStudentetQeKaneParaqiturProvimin": {
+      "get": {
+        "tags": [
+          "Profesor"
+        ],
+        "parameters": [
+          {
+            "name": "profesoriID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lendaID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "departamentiID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Profesor/VendosNotenStudentit": {
+      "post": {
+        "tags": [
+          "Profesor"
+        ],
+        "parameters": [
+          {
+            "name": "paraqitjaProvimitID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "nota",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "statusi",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Profesor/PerditesoNotenStudentit": {
+      "put": {
+        "tags": [
+          "Profesor"
+        ],
+        "parameters": [
+          {
+            "name": "paraqitjaProvimitID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "nota",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "statusi",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Profesor/RefuzoNotenStudentit": {
+      "put": {
+        "tags": [
+          "Profesor"
+        ],
+        "parameters": [
+          {
+            "name": "paraqitjaProvimitID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ShfaqAfatinERegjistrimitSemestrit": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/RegjistroSemestrin": {
+      "post": {
+        "tags": [
+          "Studentet"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentetModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentetModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentetModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ShfaqSemestratERegjistruar": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ShfaqLendetPerParaqitjeProvimi": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "appID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/KontrolloAfatinParaqitjesProvimit": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "data",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ParaqitniProvimin": {
+      "post": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ldPID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "appID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ShfaqProvimetEParaqitura": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/AnuloParaqitjenProvimit": {
+      "delete": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "paraqitjaProvimitID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/QregjistroSemestrin": {
+      "delete": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ShfaqTranskriptenNotaveStudentit": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ShfaqPagesatStudentit": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/ShfaqInfoPagesatStudentit": {
+      "get": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Studentet/VendosTarifenMujore": {
+      "post": {
+        "tags": [
+          "Studentet"
+        ],
+        "parameters": [
+          {
+            "name": "studentiID",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdministrataModel": {
+        "type": "object",
+        "properties": {
+          "aplikimetEReja": {
+            "$ref": "#/components/schemas/AplikimetEReja"
+          },
+          "tarifaDepartamenti": {
+            "$ref": "#/components/schemas/TarifatDepartamenti"
+          },
+          "perdoruesi": {
+            "$ref": "#/components/schemas/Perdoruesi"
+          },
+          "teDhenatPerdoruesit": {
+            "$ref": "#/components/schemas/TeDhenatPerdoruesit"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AfatiParaqitjesProvimit": {
+        "type": "object",
+        "properties": {
+          "appid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "afati": {
+            "type": "string",
+            "nullable": true
+          },
+          "llojiAfatit": {
+            "type": "string",
+            "nullable": true
+          },
+          "vitiAkademik": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataFillimitAfatit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataMbarimitAfatit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataFunditShfaqjesProvimeve": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AfatiParaqitjesSemestrit": {
+        "type": "object",
+        "properties": {
+          "apsid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "llojiSemestrit": {
+            "type": "string",
+            "nullable": true
+          },
+          "vitiAkademik": {
+            "type": "string",
+            "nullable": true
+          },
+          "niveliStudimeveID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dataFillimitAfatit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataMbarimitAfatit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "niveliStudimeve": {
+            "$ref": "#/components/schemas/NiveliStudimeve"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AplikimetEReja": {
+        "type": "object",
+        "properties": {
+          "aplikimiID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emri": {
+            "type": "string",
+            "nullable": true
+          },
+          "mbiemri": {
+            "type": "string",
+            "nullable": true
+          },
+          "nrPersonal": {
+            "type": "string",
+            "nullable": true
+          },
+          "emriPrindit": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailPersonal": {
+            "type": "string",
+            "nullable": true
+          },
+          "nrKontaktit": {
+            "type": "string",
+            "nullable": true
+          },
+          "qyteti": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipKodi": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "adresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "shteti": {
+            "type": "string",
+            "nullable": true
+          },
+          "gjinia": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataLindjes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "kodiFinanciar": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "niveliStudimitID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "vitiAkademikRegjistrim": {
+            "type": "string",
+            "nullable": true
+          },
+          "llojiRegjistrimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "llojiKontrates": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "zbritjaID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dataRegjistrimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "departamentet": {
+            "$ref": "#/components/schemas/Departamentet"
+          },
+          "niveliStudimeve": {
+            "$ref": "#/components/schemas/NiveliStudimeve"
+          },
+          "zbritja": {
+            "$ref": "#/components/schemas/Zbritjet"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Bankat": {
+        "type": "object",
+        "properties": {
+          "bankaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emriBankes": {
+            "type": "string",
+            "nullable": true
+          },
+          "kodiBankes": {
+            "type": "string",
+            "nullable": true
+          },
+          "numriLlogaris": {
+            "type": "string",
+            "nullable": true
+          },
+          "adresaBankes": {
+            "type": "string",
+            "nullable": true
+          },
+          "bicKodi": {
+            "type": "string",
+            "nullable": true
+          },
+          "swiftKodi": {
+            "type": "string",
+            "nullable": true
+          },
+          "valuta": {
+            "type": "string",
+            "nullable": true
+          },
+          "ibanFillimi": {
+            "type": "string",
+            "nullable": true
+          },
+          "llojiBankes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Departamentet": {
+        "type": "object",
+        "properties": {
+          "departamentiID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emriDepartamentit": {
+            "type": "string",
+            "nullable": true
+          },
+          "shkurtesaDepartamentit": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lokacionetDepartamenti": {
+            "$ref": "#/components/schemas/LokacioniDepartamenti"
+          },
+          "tarifatDepartamenti": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TarifatDepartamenti"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FinancatModel": {
+        "type": "object",
+        "properties": {
+          "banka": {
+            "$ref": "#/components/schemas/Bankat"
+          },
+          "pagesa": {
+            "$ref": "#/components/schemas/Pagesat"
+          },
+          "departamentet": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Departamentet"
+            },
+            "nullable": true
+          },
+          "departamenti": {
+            "$ref": "#/components/schemas/Departamentet"
+          },
+          "tarifatDepartamentiList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TarifatDepartamenti"
+            },
+            "nullable": true
+          },
+          "tarifatDepartamenti": {
+            "$ref": "#/components/schemas/TarifatDepartamenti"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IdentityUser": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailConfirmed": {
+            "type": "boolean"
+          },
+          "passwordHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "securityStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "concurrencyStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumberConfirmed": {
+            "type": "boolean"
+          },
+          "twoFactorEnabled": {
+            "type": "boolean"
+          },
+          "lockoutEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lockoutEnabled": {
+            "type": "boolean"
+          },
+          "accessFailedCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Lendet": {
+        "type": "object",
+        "properties": {
+          "lendaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kodiLendes": {
+            "type": "string",
+            "nullable": true
+          },
+          "emriLendes": {
+            "type": "string",
+            "nullable": true
+          },
+          "shkurtesaLendes": {
+            "type": "string",
+            "nullable": true
+          },
+          "kategoriaLendes": {
+            "type": "string",
+            "nullable": true
+          },
+          "kreditELendes": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "semestriLigjerimit": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ldpList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LendetDepartamentiProfesori"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LendetDepartamentiProfesori": {
+        "type": "object",
+        "properties": {
+          "ldpid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lendaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "departamentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "profesoriID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pozita": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamentet": {
+            "$ref": "#/components/schemas/Departamentet"
+          },
+          "profesori": {
+            "$ref": "#/components/schemas/Perdoruesi"
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LogInModelAPI": {
+        "required": [
+          "email",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Lokacionet": {
+        "type": "object",
+        "properties": {
+          "lokacioniID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emriLokacionit": {
+            "type": "string",
+            "nullable": true
+          },
+          "shkurtesaLokacionit": {
+            "type": "string",
+            "nullable": true
+          },
+          "adresaLokacionit": {
+            "type": "string",
+            "nullable": true
+          },
+          "qytetiLokacionit": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LokacioniDepartamenti": {
+        "type": "object",
+        "properties": {
+          "lokacioniDepartamentiID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lokacioniID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "departamentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "lokacioni": {
+            "$ref": "#/components/schemas/Lokacionet"
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NiveliStudimeve": {
+        "type": "object",
+        "properties": {
+          "niveliStudimeveID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emriNivelitStudimeve": {
+            "type": "string",
+            "nullable": true
+          },
+          "shkurtesaEmritNivelitStudimeve": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "semestrat": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Semestri"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotatStudenti": {
+        "type": "object",
+        "properties": {
+          "notaStudentiID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lendaID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "studentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "paraqitjaProvimitID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nota": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dataVendosjesSeNotes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lenda": {
+            "$ref": "#/components/schemas/Lendet"
+          },
+          "provimi": {
+            "$ref": "#/components/schemas/ParaqitjaProvimit"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pagesat": {
+        "type": "object",
+        "properties": {
+          "pagesaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bankaID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "aplikimiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "personiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pagesa": {
+            "type": "string",
+            "nullable": true
+          },
+          "faturimi": {
+            "type": "string",
+            "nullable": true
+          },
+          "pershkrimiPageses": {
+            "type": "string",
+            "nullable": true
+          },
+          "llojiPageses": {
+            "type": "string",
+            "nullable": true
+          },
+          "kestiPageses": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataPageses": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "bankat": {
+            "$ref": "#/components/schemas/Bankat"
+          },
+          "perdoruesi": {
+            "$ref": "#/components/schemas/Perdoruesi"
+          },
+          "aplikimetEReja": {
+            "$ref": "#/components/schemas/AplikimetEReja"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParaqitjaProvimit": {
+        "type": "object",
+        "properties": {
+          "paraqitjaProvimitID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "appid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ldpid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "studentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nota": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusiINotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataVendosjesSeNotes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataParaqitjes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "afatiParaqitjesProvimit": {
+            "$ref": "#/components/schemas/AfatiParaqitjesProvimit"
+          },
+          "lendetDepartamentiProfesori": {
+            "$ref": "#/components/schemas/LendetDepartamentiProfesori"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParaqitjaSemestrit": {
+        "type": "object",
+        "properties": {
+          "paraqitjaSemestritID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "apsid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "semestriID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "studentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "lokacioniID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nderrimiOrarit": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataParaqitjes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "semestri": {
+            "$ref": "#/components/schemas/Semestri"
+          },
+          "afatiParaqitjesSemestrit": {
+            "$ref": "#/components/schemas/AfatiParaqitjesSemestrit"
+          },
+          "lokacioni": {
+            "$ref": "#/components/schemas/Lokacionet"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Perdoruesi": {
+        "type": "object",
+        "properties": {
+          "userID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emri": {
+            "type": "string",
+            "nullable": true
+          },
+          "mbiemri": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "aspNetUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "aspNetUser": {
+            "$ref": "#/components/schemas/IdentityUser"
+          },
+          "teDhenatPerdoruesit": {
+            "$ref": "#/components/schemas/TeDhenatPerdoruesit"
+          },
+          "teDhenatRegjistrimitStudentit": {
+            "$ref": "#/components/schemas/TeDhenatRegjistrimitStudentit"
+          },
+          "paraqitjaSemestrit": {
+            "$ref": "#/components/schemas/ParaqitjaSemestrit"
+          },
+          "paraqitjaProvimit": {
+            "$ref": "#/components/schemas/ParaqitjaProvimit"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Provimi": {
+        "type": "object",
+        "properties": {
+          "paraqitjaProvimitID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "emriLendes": {
+            "type": "string",
+            "nullable": true
+          },
+          "nota": {
+            "type": "string",
+            "nullable": true
+          },
+          "kategoriaLendes": {
+            "type": "string",
+            "nullable": true
+          },
+          "profesori": {
+            "type": "string",
+            "nullable": true
+          },
+          "kodiLendes": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusiNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataVendosjesNotes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataParaqitjes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Semestri": {
+        "type": "object",
+        "properties": {
+          "semestriID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nrSemestrit": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "niveliStudimeveID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SpecializimetPerDepartament": {
+        "type": "object",
+        "properties": {
+          "specializimiID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emriSpecializimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dataKrijimt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "departamenti": {
+            "$ref": "#/components/schemas/Departamentet"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudentetModel": {
+        "type": "object",
+        "properties": {
+          "aps": {
+            "$ref": "#/components/schemas/AfatiParaqitjesSemestrit"
+          },
+          "semestrat": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Semestri"
+            },
+            "nullable": true
+          },
+          "lokacionet": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Lokacionet"
+            },
+            "nullable": true
+          },
+          "paraqitjaSemestrit": {
+            "$ref": "#/components/schemas/ParaqitjaSemestrit"
+          },
+          "perdoruesi": {
+            "$ref": "#/components/schemas/Perdoruesi"
+          },
+          "ldpList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LendetDepartamentiProfesori"
+            },
+            "nullable": true
+          },
+          "paraqitjaProvimitList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParaqitjaProvimit"
+            },
+            "nullable": true
+          },
+          "ldpProfesoretList": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Perdoruesi"
+              },
+              "nullable": true
+            },
+            "nullable": true
+          },
+          "lendet": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Lendet"
+            },
+            "nullable": true
+          },
+          "provimet": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Provimi"
+            },
+            "nullable": true
+          },
+          "app": {
+            "$ref": "#/components/schemas/AfatiParaqitjesProvimit"
+          },
+          "semestri": {
+            "$ref": "#/components/schemas/Semestri"
+          },
+          "notatStudentiList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NotatStudenti"
+            },
+            "nullable": true
+          },
+          "pagesatList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pagesat"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TarifatDepartamenti": {
+        "type": "object",
+        "properties": {
+          "tarifaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "departamentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "niveliStudimitID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tarifaVjetore": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "niveliStudimeve": {
+            "$ref": "#/components/schemas/NiveliStudimeve"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TeDhenatPerdoruesit": {
+        "type": "object",
+        "properties": {
+          "teDhenatID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nrPersonal": {
+            "type": "string",
+            "nullable": true
+          },
+          "emriPrindit": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailPersonal": {
+            "type": "string",
+            "nullable": true
+          },
+          "nrKontaktit": {
+            "type": "string",
+            "nullable": true
+          },
+          "qyteti": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipKodi": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "adresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "shteti": {
+            "type": "string",
+            "nullable": true
+          },
+          "gjinia": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataLindjes": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "userID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TeDhenatRegjistrimitStudentit": {
+        "type": "object",
+        "properties": {
+          "tDhRSID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "kodiFinanciar": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamentiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "niveliStudimitID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "vitiAkademikRegjistrim": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataRegjistrimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "llojiRegjistrimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "specializimiID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idStudenti": {
+            "type": "string",
+            "nullable": true
+          },
+          "llojiKontrates": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "departamentet": {
+            "$ref": "#/components/schemas/Departamentet"
+          },
+          "niveliStudimeve": {
+            "$ref": "#/components/schemas/NiveliStudimeve"
+          },
+          "specializimi": {
+            "$ref": "#/components/schemas/SpecializimetPerDepartament"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Zbritjet": {
+        "type": "object",
+        "properties": {
+          "zbritjaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emriZbritjes": {
+            "type": "string",
+            "nullable": true
+          },
+          "zbritja": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "llojiZbritjes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataKrijimit": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 1safsfsdfdfd\"",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

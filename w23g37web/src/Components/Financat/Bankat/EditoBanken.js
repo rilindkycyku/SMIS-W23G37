@@ -28,7 +28,7 @@ function EditoBanken(props) {
   useEffect(() => {
     const shfaqBanken = async () => {
       try {
-        const banka = await axios.get(`https://localhost:7251/api/Financat/ShfaqBankenNgaID?bankaID=` + props.id, authentikimi);
+        const banka = await axios.get(`http://localhost:7253/api/Financat/ShfaqBankenNgaID?bankaID=` + props.id, authentikimi);
         setBanka(banka.data);
 
       } catch (err) {
@@ -64,7 +64,7 @@ function EditoBanken(props) {
   async function handleSubmit() {
     
     try {
-      await axios.put(`https://localhost:7251/api/Financat/PerditesoniBanken?bankaID=` + props.id, {
+      await axios.put(`http://localhost:7253/api/Financat/PerditesoniBanken?bankaID=` + props.id, {
             banka: {
               emriBankes: banka.emriBankes,
               kodiBankes: banka.kodiBankes,

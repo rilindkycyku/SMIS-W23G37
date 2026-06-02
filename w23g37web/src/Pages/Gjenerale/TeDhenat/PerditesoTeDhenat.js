@@ -111,14 +111,14 @@ function PerditesoTeDhenat(props) {
 
         if (fjalekalimiIRi === fjalekalimiIRiKonfirmim) {
           const kontrolloFjalekalimin = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/KontrolloFjalekalimin?AspNetID=${getID}&fjalekalimi=${fjalekalimiAktual}`,
+            `http://localhost:7253/api/Perdoruesi/KontrolloFjalekalimin?AspNetID=${getID}&fjalekalimi=${fjalekalimiAktual}`,
             authentikimi
           );
 
           if (kontrolloFjalekalimin.data === true) {
             if (passREGEX.test(fjalekalimiIRi)) {
               await axios.post(
-                `https://localhost:7251/api/Perdoruesi/NdryshoFjalekalimin?AspNetID=${getID}&fjalekalimiAktual=${fjalekalimiAktual}&fjalekalimiIRi=${fjalekalimiIRi}`,
+                `http://localhost:7253/api/Perdoruesi/NdryshoFjalekalimin?AspNetID=${getID}&fjalekalimiAktual=${fjalekalimiAktual}&fjalekalimiIRi=${fjalekalimiIRi}`,
                 {},
                 authentikimi
               );

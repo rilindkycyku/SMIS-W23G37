@@ -47,7 +47,7 @@ const PagesatEStudentit = () => {
       try {
         setLoading(true);
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Student")) {
@@ -55,7 +55,7 @@ const PagesatEStudentit = () => {
         }
 
         const pagesat = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
+          `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
           authentikimi
         );
         setPagesat(pagesat.data);

@@ -35,11 +35,11 @@ const ShtoProduktin = (props) => {
     const vendosTeDhenat = async () => {
       try {
         const bankat = await axios.get(
-          `https://localhost:7251/api/Financat/ShfaqBankat`,
+          `http://localhost:7253/api/Financat/ShfaqBankat`,
           authentikimi
         );
         const personat = await axios.get(
-          `https://localhost:7251/api/Financat/ShfaqniPersonatPerPagese`,
+          `http://localhost:7253/api/Financat/ShfaqniPersonatPerPagese`,
           authentikimi
         );
         setBankat(bankat.data);
@@ -84,7 +84,7 @@ const ShtoProduktin = (props) => {
     try {
       await axios
         .post(
-          "https://localhost:7251/api/Financat/ShtoniPagesen",
+          "http://localhost:7253/api/Financat/ShtoniPagesen",
           {
             pagesa: {
               bankaID: bankaID,

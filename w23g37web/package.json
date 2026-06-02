@@ -1,4 +1,5 @@
 {
+  "homepage": "/",
   "name": "w23g37web",
   "version": "0.1.0",
   "private": true,
@@ -29,6 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -53,6 +56,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.2",
-    "depcheck": "^1.4.6"
+    "depcheck": "^1.4.6",
+    "gh-pages": "^6.1.1"
   }
 }

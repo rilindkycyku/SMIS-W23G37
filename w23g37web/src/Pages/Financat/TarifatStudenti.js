@@ -51,7 +51,7 @@ const TarifatStudenti = () => {
         setLoading(true);
 
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Financa")) {
@@ -59,7 +59,7 @@ const TarifatStudenti = () => {
         }
 
         const teDhenat = await axios.get(
-          "https://localhost:7251/api/Financat/ShfaqStudentet",
+          "http://localhost:7253/api/Financat/ShfaqStudentet",
           authentikimi
         );
         setTeDhenat(teDhenat.data);
@@ -75,7 +75,7 @@ const TarifatStudenti = () => {
 
   async function VendosZbritjenStudentit() {
     await axios.put(
-      `https://localhost:7251/api/Financat/PerditesoniTarifenStudentit?StudentiID=${id}`,
+      `http://localhost:7253/api/Financat/PerditesoniTarifenStudentit?StudentiID=${id}`,
       authentikimi
     );
 

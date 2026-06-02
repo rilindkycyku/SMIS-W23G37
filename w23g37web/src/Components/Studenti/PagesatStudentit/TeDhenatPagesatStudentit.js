@@ -24,7 +24,7 @@ function TeDhenatPagesatStudentit(props) {
     const vendosDetajetVertetimitStudentor = async () => {
       try {
         const notat = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqPagesatStudentit?studentiID=${props.id}`,
+          `http://localhost:7253/api/Studentet/ShfaqPagesatStudentit?studentiID=${props.id}`,
           authentikimi
         );
         setNotat(notat.data);
@@ -41,7 +41,7 @@ function TeDhenatPagesatStudentit(props) {
     const vendosTeDhenatBiznesit = async () => {
       try {
         const teDhenat = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${props.id}`,
+          `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${props.id}`,
           authentikimi
         );
         setTeDhenatBiznesit(teDhenat.data);

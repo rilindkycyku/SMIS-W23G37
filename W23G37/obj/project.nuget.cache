@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wU+Xi0UH5ArlT2um40JqGbxHyAL7ZcCVR0cPIVbVaLU9t0m/xMeg1POa/s+wOjs45TMbtBEUIO+VItkOEAC6JA==",
+  "dgSpecHash": "d164NZloODA=",
   "success": true,
-  "projectFilePath": "D:\\Programim\\CSharp\\W23G37Projekti\\W23G37\\W23G37.csproj",
+  "projectFilePath": "D:\\Programim\\GitHubProjekte\\SMIS-W23G37\\W23G37\\W23G37.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rkycy\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\rkycy\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

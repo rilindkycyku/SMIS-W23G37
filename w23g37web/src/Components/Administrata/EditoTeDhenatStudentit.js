@@ -32,7 +32,7 @@ function EditoTeDhenatStudentit(props) {
     const shfaqBanken = async () => {
       try {
         const teDhenat = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/ShfaqTeDhenatPerEditim?id=` +
+          `http://localhost:7253/api/Perdoruesi/ShfaqTeDhenatPerEditim?id=` +
             props.id,
           authentikimi
         );
@@ -136,7 +136,7 @@ function EditoTeDhenatStudentit(props) {
       } else {
         await axios
           .put(
-            `https://localhost:7251/api/Administrata/PerditesoniTeDhenatStudentit?studentiID=` +
+            `http://localhost:7253/api/Administrata/PerditesoniTeDhenatStudentit?studentiID=` +
               props.id,
             {
               teDhenatPerdoruesit: {

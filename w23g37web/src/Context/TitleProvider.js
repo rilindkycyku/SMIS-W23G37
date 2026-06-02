@@ -29,7 +29,7 @@ export const TitleProvider = ({ children }) => {
       const vendosTeDhenat = async () => {
         try {
           const perdoruesi = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+            `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
             authentikimi
           );
           setEmri(perdoruesi.data.emri);

@@ -52,13 +52,13 @@ function App() {
       const vendosTeDhenat = async () => {
         try {
           const rolet = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+            `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
             authentikimi
           );
 
           if (rolet.data.rolet.includes("Student")) {
             await axios.post(
-              `https://localhost:7251/api/Studentet/VendosTarifenMujore?studentiID=${getID}`,
+              `http://localhost:7253/api/Studentet/VendosTarifenMujore?studentiID=${getID}`,
               authentikimi
             );
           }

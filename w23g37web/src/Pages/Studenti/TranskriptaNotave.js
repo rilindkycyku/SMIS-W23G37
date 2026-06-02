@@ -44,7 +44,7 @@ const TranskriptaNotave = () => {
         setLoading(true);
 
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Student")) {
@@ -52,7 +52,7 @@ const TranskriptaNotave = () => {
         }
 
         const notat = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqTranskriptenNotaveStudentit?studentiID=${getID}`,
+          `http://localhost:7253/api/Studentet/ShfaqTranskriptenNotaveStudentit?studentiID=${getID}`,
           authentikimi
         );
         setNotat(notat.data.notatStudentiList);
@@ -60,7 +60,7 @@ const TranskriptaNotave = () => {
 
         if (rolet.data.rolet.includes("Student")) {
           const pagesat = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
+            `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
             authentikimi
           );
 

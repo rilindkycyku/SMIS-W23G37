@@ -40,7 +40,7 @@ const Bankat = () => {
         setLoading(true);
 
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Financa")) {
@@ -48,7 +48,7 @@ const Bankat = () => {
         }
 
         const bankat = await axios.get(
-          "https://localhost:7251/api/Financat/ShfaqBankat", authentikimi
+          "http://localhost:7253/api/Financat/ShfaqBankat", authentikimi
         );
         setBankat(bankat.data);
         setLoading(false);
@@ -83,7 +83,7 @@ const Bankat = () => {
 
   async function handleDelete() {
     try {
-      await axios.delete(`https://localhost:7251/api/Financat/FshiniBanken?bankaID=` + id, authentikimi);
+      await axios.delete(`http://localhost:7253/api/Financat/FshiniBanken?bankaID=` + id, authentikimi);
       setTipiMesazhit("success");
       setPershkrimiMesazhit("Banka u fshi me sukses!");
       setPerditeso(Date.now());

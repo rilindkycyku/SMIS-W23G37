@@ -40,7 +40,7 @@ const TarifatDepartamentit = () => {
         setLoading(true);
 
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Financa")) {
@@ -48,7 +48,7 @@ const TarifatDepartamentit = () => {
         }
 
         const teDhenat = await axios.get(
-          "https://localhost:7251/api/Financat/ShfaqniDepartamentet",
+          "http://localhost:7253/api/Financat/ShfaqniDepartamentet",
           authentikimi
         );
         setTeDhenat(teDhenat.data);

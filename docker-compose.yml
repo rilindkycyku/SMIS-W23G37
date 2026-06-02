@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./W23G37
+      dockerfile: Dockerfile
+    ports:
+      - "7253:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      # Use the containerized SQL Server:
+      - ConnectionStrings__DefaultConnection=Server=db,1433;Database=W23G37;User Id=sa;Password=W23G37SMISUBTDB123!!!;TrustServerCertificate=True;
+
+  frontend:
+    build:
+      context: ./w23g37web
+      dockerfile: Dockerfile
+    ports:
+      - "3002:80"
+    depends_on:
+      - backend
+
+  # Containerized SQL Server Database
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=W23G37SMISUBTDB123!!!
+    ports:
+      - "1435:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+volumes:
+  sql_data:

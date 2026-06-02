@@ -88,11 +88,11 @@ const Dashboard = (props) => {
       const vendosTeDhenat = async () => {
         try {
           const rolet = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${props.id}`,
+            `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${props.id}`,
             authentikimi
           );
           const perdoruesi = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/ShfaqTeDhenatNgaID?id=${props.id}`,
+            `http://localhost:7253/api/Perdoruesi/ShfaqTeDhenatNgaID?id=${props.id}`,
             authentikimi
           );
           setTeDhenat(perdoruesi.data);

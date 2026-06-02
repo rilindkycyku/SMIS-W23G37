@@ -40,7 +40,7 @@ function TeDhenatKalkulimit(props) {
       try {
         setLoading(true);
         const tarifat = await axios.get(
-          `https://localhost:7251/api/Financat/ShfaqniTarifatPerDepartamentin?DepartamentiID=${props.id}`,
+          `http://localhost:7253/api/Financat/ShfaqniTarifatPerDepartamentin?DepartamentiID=${props.id}`,
           authentikimi
         );
         setTeDhenat(tarifat.data);

@@ -81,7 +81,7 @@ const LogIn = () => {
 
     try {
       const response = await axios.post(
-        "https://localhost:7251/api/Authenticate/login",
+        "http://localhost:7253/api/Authenticate/login",
         {
           email: email,
           password: password,

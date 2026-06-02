@@ -53,7 +53,7 @@ const ParaqitjaProvimit = () => {
         setLoading(true);
 
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Student")) {
@@ -61,7 +61,7 @@ const ParaqitjaProvimit = () => {
         }
 
         const kontrolloAfatin = await axios.get(
-          `https://localhost:7251/api/Studentet/KontrolloAfatinParaqitjesProvimit?data=${Date.now()}`,
+          `http://localhost:7253/api/Studentet/KontrolloAfatinParaqitjesProvimit?data=${Date.now()}`,
           authentikimi
         );
 
@@ -69,7 +69,7 @@ const ParaqitjaProvimit = () => {
 
         if (kontrolloAfatin.status == 200) {
           const provimet = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqLendetPerParaqitjeProvimi?studentiID=${getID}&appID=${kontrolloAfatin.data.appid}`,
+            `http://localhost:7253/api/Studentet/ShfaqLendetPerParaqitjeProvimi?studentiID=${getID}&appID=${kontrolloAfatin.data.appid}`,
             authentikimi
           );
           setProvimet(provimet.data);
@@ -88,7 +88,7 @@ const ParaqitjaProvimit = () => {
 
         if (rolet.data.rolet.includes("Student")) {
           const pagesat = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
+            `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
             authentikimi
           );
 
@@ -134,7 +134,7 @@ const ParaqitjaProvimit = () => {
       setShfaqKalimiLimimitParaqitjes(true);
     } else {
       await axios.post(
-        `https://localhost:7251/api/Studentet/ParaqitniProvimin?studentiID=${getID}&ldPID=${selectedLdpid}&appID=${
+        `http://localhost:7253/api/Studentet/ParaqitniProvimin?studentiID=${getID}&ldPID=${selectedLdpid}&appID=${
           appData && appData.appid
         }`,
         authentikimi

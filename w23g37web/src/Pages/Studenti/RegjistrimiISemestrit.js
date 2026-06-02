@@ -57,7 +57,7 @@ function RegjistrimiISemestrit(props) {
       try {
         setLoading(true);
         const semestrat = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqSemestratERegjistruar?studentiID=${getID}`,
+          `http://localhost:7253/api/Studentet/ShfaqSemestratERegjistruar?studentiID=${getID}`,
           authentikimi
         );
 
@@ -77,14 +77,14 @@ function RegjistrimiISemestrit(props) {
       const vendosTeDhenat = async () => {
         try {
           const rolet = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+            `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
             authentikimi
           );
           if (!rolet.data.rolet.includes("Student")) {
             navigate("/NukKeniAkses");
           }
           const perdoruesi = await axios.get(
-            `https://localhost:7251/api/Studentet/ShfaqAfatinERegjistrimitSemestrit?studentID=${getID}`,
+            `http://localhost:7253/api/Studentet/ShfaqAfatinERegjistrimitSemestrit?studentID=${getID}`,
             authentikimi
           );
           setTeDhenat(perdoruesi.data);
@@ -101,7 +101,7 @@ function RegjistrimiISemestrit(props) {
 
           if (rolet.data.rolet.includes("Student")) {
             const pagesat = await axios.get(
-              `https://localhost:7251/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
+              `http://localhost:7253/api/Studentet/ShfaqInfoPagesatStudentit?studentiID=${getID}`,
               authentikimi
             );
 
@@ -133,7 +133,7 @@ function RegjistrimiISemestrit(props) {
     try {
       await axios
         .post(
-          "https://localhost:7251/api/Studentet/RegjistroSemestrin",
+          "http://localhost:7253/api/Studentet/RegjistroSemestrin",
           {
             paraqitjaSemestrit: {
               apsid: teDhenat && teDhenat.aps && teDhenat.aps.apsid,
@@ -168,7 +168,7 @@ function RegjistrimiISemestrit(props) {
     try {
       await axios
         .delete(
-          `https://localhost:7251/api/Studentet/QregjistroSemestrin?studentiID=${getID}`,
+          `http://localhost:7253/api/Studentet/QregjistroSemestrin?studentiID=${getID}`,
           authentikimi
         )
         .then((response) => {

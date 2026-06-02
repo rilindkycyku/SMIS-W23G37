@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Frontend
+w23g37web/node_modules
+w23g37web/build
+w23g37web/.env.local
+w23g37web/.env.development.local
+w23g37web/.env.test.local
+w23g37web/.env.production.local
+w23g37web/npm-debug.log*
+
+# Backend
+W23G37/bin/
+W23G37/obj/
+W23G37/TestResults/
+
+# VS/IDE
+.vs/
+.vscode/
+*.user
+*.suo

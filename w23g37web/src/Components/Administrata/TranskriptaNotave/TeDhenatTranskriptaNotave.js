@@ -33,7 +33,7 @@ function TeDhenatTranskriptaNotave(props) {
     const vendosDetajetVertetimitStudentor = async () => {
       try {
         const notat = await axios.get(
-          `https://localhost:7251/api/Studentet/ShfaqTranskriptenNotaveStudentit?studentiID=${props.id}`,
+          `http://localhost:7253/api/Studentet/ShfaqTranskriptenNotaveStudentit?studentiID=${props.id}`,
           authentikimi
         );
         setNotat(notat.data.notatStudentiList);

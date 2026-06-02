@@ -59,7 +59,7 @@ const Pagesat = () => {
         setLoading(true);
 
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Financa")) {
@@ -67,7 +67,7 @@ const Pagesat = () => {
         }
 
         const pagesat = await axios.get(
-          "https://localhost:7251/api/Financat/ShfaqniPagesat",
+          "http://localhost:7253/api/Financat/ShfaqniPagesat",
           authentikimi
         );
         setPagesat(pagesat.data);
@@ -104,7 +104,7 @@ const Pagesat = () => {
   async function handleDelete() {
     try {
       await axios.delete(
-        `https://localhost:7251/api/Financat/FshiniPagesen?pagesaID=` + id,
+        `http://localhost:7253/api/Financat/FshiniPagesen?pagesaID=` + id,
         authentikimi
       );
       setTipiMesazhit("success");

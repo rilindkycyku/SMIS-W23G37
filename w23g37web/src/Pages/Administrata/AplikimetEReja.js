@@ -38,7 +38,7 @@ const AplikimetEReja = () => {
       try {
         setLoading(true);
         const rolet = await axios.get(
-          `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+          `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
           authentikimi
         );
         if (!rolet.data.rolet.includes("Administrat")) {
@@ -46,7 +46,7 @@ const AplikimetEReja = () => {
         }
 
         const teDhenat = await axios.get(
-          "https://localhost:7251/api/Administrata/ShfaqAplikimetEReja",
+          "http://localhost:7253/api/Administrata/ShfaqAplikimetEReja",
           authentikimi
         );
         console.log(teDhenat.data);

@@ -69,7 +69,7 @@ function Navbar(props) {
       const vendosTeDhenat = async () => {
         try {
           const perdoruesi = await axios.get(
-            `https://localhost:7251/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
+            `http://localhost:7253/api/Perdoruesi/shfaqSipasID?idUserAspNet=${getID}`,
             authentikimi
           );
           setTeDhenat(perdoruesi.data);
@@ -293,6 +293,220 @@ function Navbar(props) {
                 )}
               {teDhenat &&
                 teDhenat.rolet &&
+                teDhenat.rolet.includes("Admin") && (
+                  <>
+                    <li>
+                      <div class="iocn-link">
+                        <a href="http://localhost:7253/Llogarite">
+                          <i>
+                            <FontAwesomeIcon icon={faAddressBook} />
+                          </i>
+                          <span class="link_name">Llogarite</span>
+                        </a>
+                        <i
+                          class="bx bxs-chevron-down arrow"
+                          onClick={handleArrowClick}>
+                          <FontAwesomeIcon icon={faChevronUp} />
+                        </i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link_name" href="http://localhost:7253/Llogarite">
+                            Llogarite
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Llogarite">Llogarite e Reja</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Identity/Account/Register">Krijoni Llogarin</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Identity/Account/ForgotPassword">Riktheni Fjalekalimin</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Identity/Account/DeletePersonalData">Fshini Llogarin</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="iocn-link">
+                        <a href="http://localhost:7253/Rolet">
+                          <i>
+                            <FontAwesomeIcon icon={faLock} />
+                          </i>
+                          <span class="link_name">Rolet</span>
+                        </a>
+                        <i
+                          class="bx bxs-chevron-down arrow"
+                          onClick={handleArrowClick}>
+                          <FontAwesomeIcon icon={faChevronUp} />
+                        </i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link_name" href="http://localhost:7253/Rolet">
+                            Rolet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Rolet">Menaxhoni Rolet</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Llogarite/RoletPerUser">Rolet e Stafit</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="iocn-link">
+                        <a href="http://localhost:7253/Lokacionet">
+                          <i>
+                            <FontAwesomeIcon icon={faBuilding} />
+                          </i>
+                          <span class="link_name">Lokacionet</span>
+                        </a>
+                        <i
+                          class="bx bxs-chevron-down arrow"
+                          onClick={handleArrowClick}>
+                          <FontAwesomeIcon icon={faChevronUp} />
+                        </i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link_name" href="http://localhost:7253/Lokacionet">
+                            Lokacionet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Lokacionet">Menaxhoni Lokacionet</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Lokacionet/IndexSallat">Menaxhoni Sallat</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="iocn-link">
+                        <a href="http://localhost:7253/Departamentet">
+                          <i>
+                            <FontAwesomeIcon icon={faBuildingColumns} />
+                          </i>
+                          <span class="link_name">Departamentet</span>
+                        </a>
+                        <i
+                          class="bx bxs-chevron-down arrow"
+                          onClick={handleArrowClick}>
+                          <FontAwesomeIcon icon={faChevronUp} />
+                        </i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link_name" href="http://localhost:7253/Departamentet">
+                            Departamentet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Departamentet">Menaxhoni Departamentet</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="iocn-link">
+                        <a href="http://localhost:7253/Lendet">
+                          <i>
+                            <FontAwesomeIcon icon={faBook} />
+                          </i>
+                          <span class="link_name">Lendet</span>
+                        </a>
+                        <i
+                          class="bx bxs-chevron-down arrow"
+                          onClick={handleArrowClick}>
+                          <FontAwesomeIcon icon={faChevronUp} />
+                        </i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link_name" href="http://localhost:7253/Lendet">
+                            Lendet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Lendet">Menaxhoni Lendet</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="iocn-link">
+                        <a href="http://localhost:7253/Afatet/SemestriIndex">
+                          <i>
+                            <FontAwesomeIcon icon={faTimeline} />
+                          </i>
+                          <span class="link_name">Afatet</span>
+                        </a>
+                        <i
+                          class="bx bxs-chevron-down arrow"
+                          onClick={handleArrowClick}>
+                          <FontAwesomeIcon icon={faChevronUp} />
+                        </i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link_name" href="http://localhost:7253/Afatet/SemestriIndex">
+                            Afatet
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Afatet/SemestriIndex">Semestrat</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Afatet/APSIndex">Afati Paraqitjes Semestrit</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/Afatet/APPIndex">Afati Paraqitjes Provimit</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <div class="iocn-link">
+                        <a href="http://localhost:7253/TeNdrysheme/NiveliStudimeveIndex">
+                          <i>
+                            <FontAwesomeIcon icon={faComputerMouse} />
+                          </i>
+                          <span class="link_name">Te Ndryshme</span>
+                        </a>
+                        <i
+                          class="bx bxs-chevron-down arrow"
+                          onClick={handleArrowClick}>
+                          <FontAwesomeIcon icon={faChevronUp} />
+                        </i>
+                      </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link_name" href="http://localhost:7253/TeNdrysheme/NiveliStudimeveIndex">
+                            Te Ndryshme
+                          </a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/TeNdrysheme/NiveliStudimeveIndex">Niveli Studimeve</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/TeNdrysheme/SpecializimetPerDepartamentIndex">Specializimet Per Departament</a>
+                        </li>
+                        <li>
+                          <a href="http://localhost:7253/TeNdrysheme/ZbritjaIndex">Zbritja</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </>
+                )}
+              {teDhenat &&
+                teDhenat.rolet &&
                 teDhenat.rolet.includes("Administrat") && (
                   <>
                     <li>
@@ -423,7 +637,8 @@ function Navbar(props) {
                 )}
               {teDhenat &&
                 teDhenat.rolet &&
-                teDhenat.rolet.includes("Profesor") && (
+                (teDhenat.rolet.includes("Profesor") ||
+                  teDhenat.rolet.includes("Asistent")) && (
                   <>
                     <li>
                       <Link to="/VendosNotat">

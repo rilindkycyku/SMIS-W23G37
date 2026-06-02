@@ -28,7 +28,7 @@ function VertetimiStudentor(props) {
       const vendosDetajetVertetimitStudentor = async () => {
         try {
           const detajetVertetimitStudentor = await axios.get(
-            `https://localhost:7251/api/Administrata/ShfaqDetajetVertetimiStudentore?userID=${props.id}`,
+            `http://localhost:7253/api/Administrata/ShfaqDetajetVertetimiStudentore?userID=${props.id}`,
             authentikimi
           );
           setTeDhenat(detajetVertetimitStudentor.data);
@@ -43,7 +43,7 @@ function VertetimiStudentor(props) {
 
       const vendosVitinAkademik = async () => {
         const vitiAkademikRegjistrim = await axios.get(
-          `https://localhost:7251/api/Administrata/GjeneroVitinAkademik`,
+          `http://localhost:7253/api/Administrata/GjeneroVitinAkademik`,
           authentikimi
         );
 

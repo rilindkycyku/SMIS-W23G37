@@ -26,7 +26,7 @@ function EditoTarifen(props) {
     const shfaqTarifen = async () => {
       try {
         const tarifa = await axios.get(
-          `https://localhost:7251/api/Financat/ShfaqniDetajetTarifes?TarifaID=` +
+          `http://localhost:7253/api/Financat/ShfaqniDetajetTarifes?TarifaID=` +
             props.id,
           authentikimi
         );
@@ -54,7 +54,7 @@ function EditoTarifen(props) {
     try {
       await axios
         .put(
-          `https://localhost:7251/api/Financat/PerditesoniTarifenDepartamentit?tarifaID=` +
+          `http://localhost:7253/api/Financat/PerditesoniTarifenDepartamentit?tarifaID=` +
             props.id,
           {
             tarifatDepartamenti: {

@@ -1,3 +1,4 @@
+
 # SMIS-W23G37
 # Rreth Projektit
 Ky projekt eshte punuar per projektin ne **Hyrje në Ueb Programim** & **Zhvillimi dhe Dizajnimi i Ueb**.
@@ -27,6 +28,19 @@ Profesoret:
 - **Edmond Jajaga** - Assoc. Prof. Dr.
 
 # Konfigurimi
+
+## Startimi me Docker (E preferuar)
+Tani projekti eshte i konfiguruar per tu startuar lehtesisht permes Docker. Per te startuar te gjitha sherbimet (Backend, Frontend, dhe SQL Server) pernjehere, hapni terminalin ne direktorin root te projektit dhe ekzekutoni komanden:
+
+```bash
+docker-compose up --build
+```
+Kjo komande do te bej build imazhet, do te krijoj databazen me te gjitha migrimet automatikisht, dhe do ti qase aplikacionet ne portet e meposhtme:
+- **Frontend (React):** http://localhost:3002
+- **Backend (API):** http://localhost:7253
+- **Databaza (SQL Server):** localhost:1435
+
+## Konfigurimi Manual (Pa Docker)
 Se pari duhet te behet konfigurimi i Connection String ne W23G37/appsettings.json dhe duhet te nderrohet emri i Server me ate te serverit tuaj, Emri i Databazes nuk preferohet te ndryshohet, pastaj ju duhet te beni run komanden **Update-Database** ne **Serverin e Projektit - W23G37** -> *Tools* > *NuGet Package Manager* > *Package Manager Console* e cili do te mundesoj gjenerimin ne teresi te databases dhe insertimin e te dhenave bazike gjithashtu mund te perdoret edhe nje SQL File i gatshem me te dhena te ndryshme si Departamente, Salla, Lokacione ejt. Ky file gjendet tek *Databaza > W23G37Databaza.sql*, pasi te keni perfunduar me keto hapa ju duhet qe te beni run serverin dhe pastaj ne VSC pjesen e React qe gjendet tek **w23g37web** duhet te hapet ne terminal pastaj duhen te behen run keto komonda:
 
 *Keto duhen te behen vetem ne qoftese e keni hapur projketin per here te pare*
@@ -38,8 +52,6 @@ Se pari duhet te behet konfigurimi i Connection String ne W23G37/appsettings.jso
 *Kjo duhet te behet gjithmone kur startojme projektin e React*
 
 **npm start** - Bene startimin e projektit.
-
-  
 
 ## Te Dhenat per Kyqje
   

@@ -1,0 +1,1030 @@
+[
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "GjeneroKodinFinanciar",
+    "RelativePath": "api/Administrata/gjeneroKodinFinanciar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departamentiID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "niveliStudimitID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "GjeneroVitinAkademik",
+    "RelativePath": "api/Administrata/GjeneroVitinAkademik",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "KrijoniAplikimERi",
+    "RelativePath": "api/Administrata/KrijoniAplikimERi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aplikimi",
+        "Type": "W23G37.Areas.Administrata.Controllers.AdministrataController\u002BAdministrataModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "PerditesoniTeDhenatStudentit",
+    "RelativePath": "api/Administrata/PerditesoniTeDhenatStudentit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "studenti",
+        "Type": "W23G37.Areas.Administrata.Controllers.AdministrataController\u002BAdministrataModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqAplikimetEReja",
+    "RelativePath": "api/Administrata/ShfaqAplikimetEReja",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqAplikiminNgaID",
+    "RelativePath": "api/Administrata/ShfaqAplikiminNgaID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqDepartmanetet",
+    "RelativePath": "api/Administrata/shfaqDepartamentet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqDetajetVertetimiStudentore",
+    "RelativePath": "api/Administrata/ShfaqDetajetVertetimiStudentore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqLlogariteBankare",
+    "RelativePath": "api/Administrata/ShfaqLlogariteBankare",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqNiveletStudimitGjatAplikimit",
+    "RelativePath": "api/Administrata/shfaqNiveletStudimitGjatAplikimit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departamentiID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqStudentet",
+    "RelativePath": "api/Administrata/ShfaqStudentet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Administrata.Controllers.AdministrataController",
+    "Method": "ShfaqZbritjet",
+    "RelativePath": "api/Administrata/ShfaqZbritjet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "FshijRolet",
+    "RelativePath": "api/Authenticate/fshijRolin",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emriRolit",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "FshijRolinUserit",
+    "RelativePath": "api/Authenticate/FshijRolinUserit",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roli",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "KontrolloAksesin",
+    "RelativePath": "api/Authenticate/kontrolloAksesin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "Login",
+    "RelativePath": "api/Authenticate/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "W23G37.Auth.LogInModelAPI",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "ShfaqRolet",
+    "RelativePath": "api/Authenticate/shfaqRolet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "ShfaqRoletPerKrijim",
+    "RelativePath": "api/Authenticate/ShfaqRoletPerKrijim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "ShfaqRolin",
+    "RelativePath": "api/Authenticate/shfaqRolin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emriRolit",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "ShtoRolin",
+    "RelativePath": "api/Authenticate/shtoRolin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roli",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Identity.Controllers.AuthenticateController",
+    "Method": "PerditesoAksesin",
+    "RelativePath": "api/Authenticate/shtoRolinPerdoruesit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roli",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "FshiniBanken",
+    "RelativePath": "api/Financat/FshiniBanken",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "FshiniPagesen",
+    "RelativePath": "api/Financat/FshiniPagesen",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagesaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "PerditesoniBanken",
+    "RelativePath": "api/Financat/PerditesoniBanken",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "banka",
+        "Type": "W23G37.Areas.Financat.Controllers.FinancatController\u002BFinancatModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "PerditesoniTarifenDepartamentit",
+    "RelativePath": "api/Financat/PerditesoniTarifenDepartamentit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarifaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "tarifatDepartamenti",
+        "Type": "W23G37.Areas.Financat.Controllers.FinancatController\u002BFinancatModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "PerditesoniTarifenStudentit",
+    "RelativePath": "api/Financat/PerditesoniTarifenStudentit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StudentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqBankat",
+    "RelativePath": "api/Financat/ShfaqBankat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqBankenNgaID",
+    "RelativePath": "api/Financat/ShfaqBankenNgaID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqniDepartamentet",
+    "RelativePath": "api/Financat/ShfaqniDepartamentet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqniDetajetTarifes",
+    "RelativePath": "api/Financat/ShfaqniDetajetTarifes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TarifaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqniPagesat",
+    "RelativePath": "api/Financat/ShfaqniPagesat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqniPersonatPerPagese",
+    "RelativePath": "api/Financat/ShfaqniPersonatPerPagese",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqniTarifatPerDepartamentin",
+    "RelativePath": "api/Financat/ShfaqniTarifatPerDepartamentin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DepartamentiID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShfaqStudentet",
+    "RelativePath": "api/Financat/ShfaqStudentet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShtoniBanken",
+    "RelativePath": "api/Financat/ShtoniBanken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "banka",
+        "Type": "W23G37.Areas.Financat.Controllers.FinancatController\u002BFinancatModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Financat.Controllers.FinancatController",
+    "Method": "ShtoniPagesen",
+    "RelativePath": "api/Financat/ShtoniPagesen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagesa",
+        "Type": "W23G37.Areas.Financat.Controllers.FinancatController\u002BFinancatModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "editoRoletPerdoruesit",
+    "RelativePath": "api/Perdoruesi/editoRoletPerdoruesit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AspNetUserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "llojiEditmit",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "KontrolloEmail",
+    "RelativePath": "api/Perdoruesi/KontrolloEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "KontrolloFjalekalimin",
+    "RelativePath": "api/Perdoruesi/KontrolloFjalekalimin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AspNetID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fjalekalimi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "NdryshoFjalekalimin",
+    "RelativePath": "api/Perdoruesi/NdryshoFjalekalimin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AspNetID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fjalekalimiAktual",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fjalekalimiIRi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "shfaqLlogaritERejaTeKrijuara",
+    "RelativePath": "api/Perdoruesi/shfaqLlogaritERejaTeKrijuara",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "shfaqPerdoruesit",
+    "RelativePath": "api/Perdoruesi/shfaqPerdoruesit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "GetbyId",
+    "RelativePath": "api/Perdoruesi/shfaqSipasID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUserAspNet",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "ShfaqTeDhenatNgaID",
+    "RelativePath": "api/Perdoruesi/ShfaqTeDhenatNgaID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Perdoruesit.Controllers.PerdoruesiController",
+    "Method": "ShfaqTeDhenatPerEditim",
+    "RelativePath": "api/Perdoruesi/ShfaqTeDhenatPerEditim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Profesor.Controllers.ProfesorController",
+    "Method": "PerditesoNotenStudentit",
+    "RelativePath": "api/Profesor/PerditesoNotenStudentit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paraqitjaProvimitID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nota",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "statusi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Profesor.Controllers.ProfesorController",
+    "Method": "RefuzoNotenStudentit",
+    "RelativePath": "api/Profesor/RefuzoNotenStudentit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paraqitjaProvimitID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Profesor.Controllers.ProfesorController",
+    "Method": "ShfaqDepartamentinPerLendetProfesorit",
+    "RelativePath": "api/Profesor/ShfaqDepartamentinPerLendetProfesorit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profesoriID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lendaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Profesor.Controllers.ProfesorController",
+    "Method": "ShfaqLendetProfesorit",
+    "RelativePath": "api/Profesor/ShfaqLendetProfesorit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profesoriID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Profesor.Controllers.ProfesorController",
+    "Method": "ShfaqStudentetQeKaneParaqiturProvimin",
+    "RelativePath": "api/Profesor/ShfaqStudentetQeKaneParaqiturProvimin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profesoriID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lendaID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "departamentiID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Profesor.Controllers.ProfesorController",
+    "Method": "VendosNotenStudentit",
+    "RelativePath": "api/Profesor/VendosNotenStudentit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paraqitjaProvimitID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nota",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "statusi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "AnuloParaqitjenProvimit",
+    "RelativePath": "api/Studentet/AnuloParaqitjenProvimit",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paraqitjaProvimitID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "KontrolloAfatinParaqitjesProvimit",
+    "RelativePath": "api/Studentet/KontrolloAfatinParaqitjesProvimit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ParaqitniProvimin",
+    "RelativePath": "api/Studentet/ParaqitniProvimin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ldPID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "appID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "QregjistroSemestrin",
+    "RelativePath": "api/Studentet/QregjistroSemestrin",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqAfatinERegjistrimitSemestrit",
+    "RelativePath": "api/Studentet/RegjistroSemestrin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paraqitjaSemestrit",
+        "Type": "W23G37.Areas.Studentet.Controllers.StudentetController\u002BStudentetModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqAfatinERegjistrimitSemestrit",
+    "RelativePath": "api/Studentet/ShfaqAfatinERegjistrimitSemestrit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqInfoPagesatStudentit",
+    "RelativePath": "api/Studentet/ShfaqInfoPagesatStudentit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqLendetPerParaqitjeProvimi",
+    "RelativePath": "api/Studentet/ShfaqLendetPerParaqitjeProvimi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "appID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqPagesatStudentit",
+    "RelativePath": "api/Studentet/ShfaqPagesatStudentit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqProvimetEParaqitura",
+    "RelativePath": "api/Studentet/ShfaqProvimetEParaqitura",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqSemestratERegjistruar",
+    "RelativePath": "api/Studentet/ShfaqSemestratERegjistruar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "ShfaqTranskriptenNotaveStudentit",
+    "RelativePath": "api/Studentet/ShfaqTranskriptenNotaveStudentit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "W23G37.Areas.Studentet.Controllers.StudentetController",
+    "Method": "VendosTarifenMujore",
+    "RelativePath": "api/Studentet/VendosTarifenMujore",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentiID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
