@@ -1,5 +1,8 @@
 
 # SMIS-W23G37
+
+![SMIS — One system for the whole university](ReadMeImages/montage/hero.png)
+
 # Rreth Projektit
 Ky projekt eshte punuar per projektin ne **Hyrje në Ueb Programim** & **Zhvillimi dhe Dizajnimi i Ueb**.
 
@@ -68,6 +71,8 @@ Se pari duhet te behet konfigurimi i Connection String ne W23G37/appsettings.jso
 ![](ReadMeImages/DiagramiDatabazes.png)
 
 # Pamja e SMIS
+
+![Every role, every record, one place](ReadMeImages/montage/showcase.png)
 
 ## Pamja MVC
 
